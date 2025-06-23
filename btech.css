@@ -1,0 +1,236 @@
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#BFA181;
+    border-radius: 20px;
+}
+
+:root {
+    --primary-color: #005bb5;
+    --secondary-color: #0082c3;
+    --accent-color: #ff6b6b;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --gray-light: #f5f5f5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #0A1828;
+}
+
+.header {
+    background: #0A1828;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    list-style: none;
+    text-decoration: none; 
+    border-bottom: 1px solid #BFA181;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-menu li a:hover {
+    color: #BFA181;
+}
+
+.nav-menu li a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.nav-menu li a.active:hover {
+    color: var(--secondary-color);
+}
+
+.new {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 560px;
+    color: white;
+    font-weight: 600;
+}
+
+.label {
+    text-decoration: none;
+    color: white;
+}
+
+.label:hover {
+    color: #BFA181;
+}
+
+.course-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.course1 {
+    background-color: aqua;
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    gap: 30px;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: auto;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: transform;
+}
+
+.course1:hover {
+    cursor: pointer;
+    background-color: #BFA181;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.syllabus-btn {
+    background-color: #BFA181;
+    color: #0A1828;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    /* Centering properties */
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.syllabus-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+}
+.footer {
+            background-color: #0A1828; /* Dark blue background */
+            color: white;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 25px; /* Using gap for consistent spacing between elements */
+            border-top: 2px solid #BFA181; /* Added a white line on top */
+        }
+
+        .footer-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .footer-logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .footer-institute {
+            display: flex;
+            flex-direction: column;
+            gap: 8px; /* Space between the Hindi and English names */
+        }
+
+        .footer-institute-name {
+            font-size: 1.5rem;
+            margin: 0;
+            line-height: 1.3; /* Adjust line height for closer text */
+        }
+
+        .footer-contact-info {
+            font-size: 1rem;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 5px; /* Space between contact info lines */
+        }
+
+        .footer-contact-info p {
+            margin: 0;
+        }
